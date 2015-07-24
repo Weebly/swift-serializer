@@ -12,7 +12,8 @@
 
 import Foundation
 
-public class Serializable: NSObject {
+public protocol Serializable { }
+extension Serializable {
     
     /**
         Converts the class to a dictionary.
